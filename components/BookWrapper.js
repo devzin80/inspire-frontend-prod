@@ -4,7 +4,7 @@ import BookCard from './BookCard'
 import SeeAllBtn from './SeeAllBtn'
 
 const BookWrapper = async () => {
-    const { books } = await BookData()
+    const books = await BookData()
     // console.log(books)
 
     return (
