@@ -51,7 +51,7 @@ export default function BannerCarousel({ banners }) {
                 initial={false}
                 custom={current}
             >
-                {bannerData.map((banner, index) =>
+                {bannerData?.map((banner, index) =>
                     index === current ? (
                         <motion.div
                             key={banner.id}
@@ -102,7 +102,7 @@ export default function BannerCarousel({ banners }) {
 
             {/* Navigation dots */}
             <div className='absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2'>
-                {bannerData.map((_, idx) => (
+                {bannerData?.map((_, idx) => (
                     <button
                         key={idx}
                         onClick={() => setCurrent(idx)}

@@ -40,7 +40,7 @@ const BottomNav = () => {
 
     return (
         <div className='w-full h-[54px] bg-white fixed bottom-0 flex items-center justify-between'>
-            {navItems.map((item) => {
+            {navItems?.map((item) => {
                 // const Icon = item.Icon
                 return (
                     <div

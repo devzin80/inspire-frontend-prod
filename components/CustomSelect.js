@@ -19,9 +19,9 @@ const CustomSelect = ({ options, onSelect }) => {
                      `${process.env.NEXT_PUBLIC_BACKEND_URL}/class/all`,
                  )
                  const data = await res.json()
-                 const classOptions = data.classes.map((cls) => ({
-                     label: cls.title,
-                     value: cls._id,
+                 const classOptions = data?.classes?.map((cls) => ({
+                     label: cls?.title,
+                     value: cls?._id,
                  }))
                  console.log(classOptions);
  

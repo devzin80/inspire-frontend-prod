@@ -92,7 +92,7 @@ const ProfileActions = ({ status }) => {
     return (
         <div>
             <div className='w-full bg-white rounded-lg gap-2 '>
-                {filteredActions.map((action) => {
+                {filteredActions?.map((action) => {
                     return (
                         <div
                             className='px-2 py-3 gap-4 flex justify-between items-center cursor-pointer'

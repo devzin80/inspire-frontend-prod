@@ -51,7 +51,7 @@ const ChapterTIle = ({ chapterDetails, chapter }) => {
             </div>
             <div className='my-5 p-4'>
                 {/* Topic Loop */}
-                {chapterDetails.topics.map((topic, index) => (
+                {chapterDetails?.topics?.map((topic, index) => (
                     <div className='rounded-xl bg-white py-6 px-4  w-full h-[26vh] mb-5' key={index}>
                         <div className='flex justify-between items-center gap-5 py-3'>
                             <p className='text-base font-semibold text-neutral-900 leading-2'>
@@ -77,7 +77,7 @@ const ChapterTIle = ({ chapterDetails, chapter }) => {
                         <div className='my-4 overflow-y-scroll  h-[15vh] noScrollbar'>
                             {/* video loop */}
                             {
-                                topic.videos.map((video, index) => (
+                                topic?.videos?.map((video, index) => (
                                     
                             <div className='rounded border border-gray-200 flex justify-between items-center gap-3 p-3 my-3 ' key={index} onClick={() => {router.push(`${chapter}/${topic.slug}/${video.slug}`)}}>
                                 <div className='flex items-center gap-3'>

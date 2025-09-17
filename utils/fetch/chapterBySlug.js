@@ -6,7 +6,7 @@ const fetchChapterBySlug = async (slug) => {
         const chapterData = await res.json()
         console.log(chapterData)
 
-        return chapterData?.chapter
+        return chapterData?.chapter 
     } catch (e) {
         console.log(e.message)
     }

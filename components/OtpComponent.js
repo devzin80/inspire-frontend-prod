@@ -81,7 +81,7 @@ export default function OtpInput({
     return (
         <div className='flex flex-col items-center space-y-4'>
             <div className={`flex space-x-3 ${shake ? 'shake' : ''}`}>
-                {Array.from({ length }).map((_, idx) => (
+                {Array.from({ length })?.map((_, idx) => (
                     <input
                         key={idx}
                         type='tel'

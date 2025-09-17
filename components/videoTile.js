@@ -29,7 +29,7 @@ const VideoTile = ({ videoData }) => {
                     </p>
                 </div>
                 <div className='my-4'>
-                    {videoData.notes.map((note, index) => (
+                    {videoData?.notes?.map((note, index) => (
                         <div
                             className='rounded bg-white flex justify-between items-center gap-3 p-3 my-3 '
                             key={index}

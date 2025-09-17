@@ -19,11 +19,11 @@ const BookWrapper = async () => {
                 {books?.map((book, index) => (
                     <BookCard
                         key={index}
-                        slug={book.slug}
-                        title={book.title}
-                        image={book.images[0] || '/default-card.svg'}
-                        price={book.price}
-                        offerPrice={book.offerPrice}
+                        slug={book?.slug}
+                        title={book?.title}
+                        image={book?.images[0] || '/default-card.svg'}
+                        price={book?.price}
+                        offerPrice={book?.offerPrice}
                     />
                 ))}
             </div>

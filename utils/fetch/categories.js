@@ -5,7 +5,7 @@ const fetchCategories = async () => {
             { next: { revalidate: 60 } },
         )
         const categories = await res.json()
-        return categories
+        return categories ||[]
     } catch (e) {
         console.log(e.message)
     }
